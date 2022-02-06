@@ -1,0 +1,57 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-video {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  opacity: 0.01;
+  animation: load 1.5s 0.8s ease-out forwards;
+}
+
+.container-video #timer {
+  color: #fff;
+  font-size: 3em;
+}
+
+.container-video #video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@keyframes load {
+  100% {
+    opacity: 1;
+  }
+}
+.table-center {
+  display: table;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.table-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+}
+.table-center > div p {
+  color: #fff;
+  text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-size: 5em;
+  font-weight: 600;
+}
+
